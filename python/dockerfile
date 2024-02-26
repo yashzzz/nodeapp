@@ -1,0 +1,12 @@
+# getting base image for python 
+
+FROM python
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the local code to the container
+COPY . /app
+
+# Run your code
+CMD ["python", "calculator.py"]
